@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>當日選擇</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Existing styles remain unchanged */
+
+        form#selectForm {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        #chineseDate{
+            position: absolute;
+            color: #ada8a8;
+            bottom: 55px;
+            left: 330px;
+            background-color: rgba(130, 129, 127, 0.584);
+            border-radius:30px
+        }
+
+
+        /* Additional styling for result display */
+        .container{
+            width: 80%;
+            margin-top: 30px;
+            height: cover;
+            justify-content: center;
+            text-align: center;
+            margin-left: 30px;
+        }
+        .outcontent{
+            margin-top: 47px;
+            display: flex;
+        }
+        #user_nav {
+            width: 17%;
+            margin-right: 15px;
+            height: cover !important;
+            background-color: #4a5f6d; /* Dark background color */
+            padding-top: 7px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+        }
+        .sweet-warning{
+            padding-top: 0px !important;
+        }
+
+        #user_nav nav ul {
+            list-style: none;
+        }
+
+        #user_nav nav li {
+            font-size: 100px;
+            transition: 0.7s;
+            font-weight: bolder;
+        }
+
+        #user_nav nav ul li a {
+            color: #fff; /* White text color */
+            font-size: 20px;
+            transition: color 0.3s; /* Smooth color transition on hover */
+            text-decoration: none !important; /* Remove underline */
+        }
+
+        #user_nav nav a:hover {
+            color: #3498db; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body style="background-image: url(./images/20191008003346_2.jpg.webp);background-color: rgba(0, 0, 0, 0.8) !important;			background-size: cover;background-position: center center;	background-color: rgba(0, 0, 0, .6);background-blend-mode: multiply;background-repeat: no-repeat;background-size: cover;">
+    <header id="header" style="background-color: #2e3842; display: block !important; position: fixed; width: 100%;" >
+        <h1 style="color: white;"><a href="index.html" >日本山形縣介紹</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a class="ft-23p" href="index.html">首頁</a></li>
+                            <li id="cartule"><a class="ft-23p">山形縣文化介紹</a>
+                                <div class="cartule_inner">
+                                    <div class="cartule_inner_div"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="generic.html">山形縣歷史介紹</a></div>
+                                    <div class="cartule_inner_div"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="generic2.html">山形縣文化介紹</a></div>
+                                    <div class="cartule_inner_div"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a  href="genericz.html">山形縣基本介紹</a></div>
+                                </div>
+                            </li>
+                            <li id="views"><a  class="ft-23p" >旅遊景點推薦</a>
+                                    <div class="cartule_inner">
+                                        <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Yinshan.html">銀山溫泉</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Tibetan hot spring ski resort.html">藏王溫泉滑雪場</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Mountain.html">山寺</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Garend.html">霞城公園</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Mount kuroba.html.html">羽黑山</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Mogami Yoshiaki.html">最上義光歴史館</a></div>
+                                    </div>
+                                </li>
+                            <li id="food"><a  class="ft-23p" >美食介紹</a>
+                                <div class="cartule_inner">
+                                    <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="beef.html">米澤牛</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="noodles.html">板蕎麥麵</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="guzzie.html">天童葡萄酒</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="taro.html">芋煮</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="oyster.html">山形水果</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="cold noodles.html">冷拉麵</a></div>
+                                </div>
+                            </li>
+                            <li id="gift"><a  class="ft-23p">伴手禮特選</a>
+                                <div class="cartule_inner">
+                                    <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Shunkogashi.html">旬香菓</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Old mirror.html">古鏡</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Cherry.html">櫻桃通心粉</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Waeabi.html">蕨餅</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Cold tree.html">樹冰羅曼</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="golden cake.html">金鍔糕</a></div>
+                                </div>
+                                <li id="gift"><a href="./sing_in.html" class="ft-23p">用戶登入</a></li>
+                                <li id="gift"><a href="./5 3A917110/index.html" class="ft-23p">行程安排</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="outcontent">
+        <div style="width: 15%;" id="user_nav">
+            <nav>
+                <ul>
+                    <li><a href="./user_schedule.html">行程規劃</a></li>
+                    <li><a href="./schedule_record.html">行程紀錄</a></li>
+                    <li><a href="#交易紀錄">交易紀錄</a></li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <h1>請選擇當日行程規劃</h1>
+            <form id="selectForm">
+                <label>景點選擇:</label>
+                <select id="attractions" name="attractions" >
+                    <option value="銀山溫泉">銀山溫泉</option>
+                    <option value="藏王溫泉滑雪場">藏王溫泉滑雪場</option>
+                    <option value="山寺">山寺</option>
+                    <option value="霞城公園">霞城公園</option>
+                    <option value="羽黑山">羽黑山</option>
+                    <option value="最上義光歴史館">最上義光歴史館</option>
+                </select>
+                <label>美食選擇:</label>
+                <select id="foods" name="foods">
+                    <option value="米澤牛">米澤牛</option>
+                    <option value="板蕎麥麵">板蕎麥麵</option>
+                    <option value="天童葡萄酒">天童葡萄酒</option>
+                    <option value="芋煮">芋煮</option>
+                    <option value="冷拉麵">冷拉麵</option>
+                </select>
+                <label>交通選擇:</label>
+                <select id="transportation" name="transportation">
+                    <option value="走路">走路</option>
+                    <option value="腳踏車">交踏車</option>
+                    <option value="機車">機車</option>
+                    <option value="巴士">巴士</option>
+                    <option value="電車">電車</option>
+                    <option value="計程車">機乘車</option>
+                    <option value="飛機">飛機</option>
+                </select>
+                <label>住宿選擇:</label>
+                <select id="accommodation" name="accommodation">
+                    <option value="山形大都會飯店">山形大都會飯店</option>
+                    <option value="高宮哈蒙德酒店">
+                    高宮哈蒙德酒店</option>
+                    <option value="
+                    雪怪日出酒店">
+                    雪怪日出酒店</option>
+                    <option value="藏王聖誕玫瑰山林小屋">藏王聖誕玫瑰山林小屋</option>
+                    <option value="德爾巴特度假酒店">德爾巴特度假酒店</option>
+                    <option value="斯科爾旅館
+                    ">斯科爾旅館
+                </option>
+                    <option value="昭四季酒店">昭四季酒店</option>
+                </select>
+                <label>伴手禮選擇:</label>
+                <select id="souvenirs" name="souvenirs">
+                    <option value="無">無</option>
+                    <option value="旬香菓">旬香菓</option>
+                    <option value="古鏡">古鏡</option>
+                    <option value="櫻桃通心粉">櫻桃通心粉</option>
+                    <option value="蕨餅">蕨餅</option>
+                    <option value="樹冰羅曼">樹冰羅曼</option>
+                    <option value="金鍔糕">金鍔糕</option>
+                </select>
+                <p style="margin-top: 5px;">日期:</p><input type="date" id="chineseDate" name="chineseDate"  lang="zh-TW">
+                <button type="button" style="margin: 0 auto;margin-top:36px;" onclick="showSelected()">確認規劃</button>
+            </form>
+
+            <div id="result"></div>
+
+
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+
+
+    function showSelected() {
+        swal({
+            title: "請檢察您的行程是否正確!",
+            text:  "景點：" + document.getElementById("attractions").value + "\n美食：" + document.getElementById("foods").value + "\n交通：" + document.getElementById("transportation").value + "\n住宿：" + document.getElementById("accommodation").value + "\n伴手禮：" + document.getElementById("souvenirs").value + "\n日期: "+document.getElementById("chineseDate").value + "\n",
+            icon: "info",
+            buttons: {
+                cancel: {
+                    text: "取消",
+                    visible: true,
+                    className : 'sweet-warning'
+                },
+                confirm: {
+                    text: "確定",
+                    visible: true,
+                    className : 'sweet-warning'
+                }}
+            }). then ((will)=>{
+            if (will){
+                swal({
+                    title: "成功",
+                    text:  "恭喜您添加成功!",
+                    icon: "success",
+                    buttons:{
+                        confirm: {
+                            text: "好的",
+                            visible: true,
+                            className : 'sweet-warning'
+                        }
+                    }
+                })
+            }
+        });
+        // var result = "<p>您選擇了：<br>";
+        // result += "景點：" + document.getElementById("attractions").value + "<br>";
+        // result += "美食：" + document.getElementById("foods").value + "<br>";
+        // result += "交通：" + document.getElementById("transportation").value + "<br>";
+        // result += "住宿：" + document.getElementById("accommodation").value + "<br>";
+        // result += "伴手禮：" + document.getElementById("souvenirs").value + "</p>";
+
+        // document.getElementById("result").innerHTML = result;
+    }
+</script>
+</html>

@@ -1,0 +1,71 @@
+
+.content{
+    width: auto;
+    text-indent: 20px;
+}
+.p_paddle{
+    padding-left: 5px;
+}
+a:hover{
+    color: rgb(0, 178, 248);
+}
+/* a:visited{
+    color: rgb(76, 79, 80);
+} */
+.pright{
+    margin-bottom: 200px !important;padding-right: 50px !important;
+}
+.marleft{
+    margin-left: 20px !important;
+
+}
+.text_inde{
+    text-indent:30px;
+}
+.fontb{
+    font-weight: bold;
+}
+.a_work{
+ display: flex;
+ justify-content:space-around;
+ font-size: 20px;
+    padding-top: 20px;
+ background-color: rgb(126, 103, 75);
+ border-radius: 10px;
+ box-shadow: 3px 3px 0px 0px rgb(58, 57, 57);
+}
+.co1{
+    color: rgb(206, 184, 157);
+}
+.co2{
+    color: rgb(223, 168, 91);
+}
+.co3{
+    color: rgb(255, 179, 0);
+}
+.mar{
+    margin-top: 80px;
+    margin-left: 80%;
+}
+.flex{
+    display: flex;
+}
+.skill_title{
+    justify-content:space-around;
+    font-size: 25px;
+    color:blue !important;
+}
+.skill{
+    justify-content:space-around;
+}
+div.good{
+    list-style-type:none;
+text-align: center !important;
+margin-right: 120px;
+color: rgb(0, 255, 115) !important;
+}
+div.bed{
+list-style-type:none;
+text-align: center !important;
+margin-right: 80px;
+}

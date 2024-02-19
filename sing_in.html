@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image:url("./images/a3000001_main.webp");
+            background-color: rgba(0, 0, 0, 0.8) !important;			background-size: cover;background-position: center center;	background-color: rgba(0, 0, 0, .6);background-blend-mode: multiply;background-repeat: no-repeat;background-size: cover;
+            background-size: cover;
+		        background-position: center center;
+        }
+
+        .login-container {
+            background-color: #ffffff87;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+        .sweet-warning{
+            padding-top: 0px !important;
+        }
+        .login-container h2 {
+            color: #ffffff;
+        }
+
+        .login-form {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: #d5d3d3;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #666666;
+            border-radius: 5px;
+            background-color: #555555;
+            color: #ffffff;
+        }
+
+        .form-group button {
+            background-color: #555555;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #main header {
+		height: 500px;
+		background-color: rgba(0, 0, 0, .6);
+		background-blend-mode: multiply;		background-size: cover;
+		background-position: center center;
+		}
+        li{
+			cursor: pointer;
+		}
+		.spotlight{
+			transition: 2s;
+		}
+		.spotlight:hover{
+			transform: scale(0.99);
+			background-color: rgb(79, 83, 92);
+		}
+		.cartule_inner{
+			transition: 2s;
+		}
+		.cartule_inner div{
+			font-size: 17px;
+			padding: 5px;
+		}
+		.cartule_inner div{
+			font-weight: bold;
+		}
+		.relative{
+			position: relative;
+			clear: both;
+			margin-bottom: 30px;
+		}
+		.relative a{
+			position:absolute;
+		}
+		.cartule_inner div:hover{
+			color: rgb(78, 77, 77);
+		}
+		.ft-23p{
+			font-weight: bolder;
+			font-size: 19px !important;
+		}
+		.cartule_inner div svg{
+			vertical-align: -2px;
+			margin-right: 5px;
+		}
+        #sing_up{
+            display: flex;justify-content: space-between;flex-wrap: wrap;
+            margin-top: 35px;
+        }
+        @media screen and (max-width:500px) {
+            #sing_up{
+                display: flex;justify-content: center; flex-direction:column;
+            }
+            #sing_up button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #2e3842;" id="header">
+        <h1><a href="index.html">日本山形縣介紹</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a class="ft-23p" href="index.html">首頁</a></li>
+                            <li id="cartule"><a class="ft-23p">山形縣文化介紹</a>
+                                <div class="cartule_inner">
+                                    <div class="cartule_inner_div"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="generic.html">山形縣歷史介紹</a></div>
+                                    <div class="cartule_inner_div"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="generic2.html">山形縣文化介紹</a></div>
+                                    <div class="cartule_inner_div"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a  href="genericz.html">山形縣基本介紹</a></div>
+                                </div>
+                            </li>
+                            <li id="views"><a  class="ft-23p" >旅遊景點推薦</a>
+                                    <div class="cartule_inner">
+                                        <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Yinshan.html">銀山溫泉</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Tibetan hot spring ski resort.html">藏王溫泉滑雪場</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Mountain.html">山寺</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Garend.html">霞城公園</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Mount kuroba.html.html">羽黑山</a></div>
+                                          <div class="cartule_inner_view"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                          </svg><a href="Mogami Yoshiaki.html">最上義光歴史館</a></div>
+                                    </div>
+                                </li>
+                            <li id="food"><a  class="ft-23p" >美食介紹</a>
+                                <div class="cartule_inner">
+                                    <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="beef.html">米澤牛</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="noodles.html">板蕎麥麵</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="guzzie.html">天童葡萄酒</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="taro.html">芋煮</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="oyster.html">山形水果</a></div>
+                                      <div class="cartule_inner_food"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="cold noodles.html">冷拉麵</a></div>
+                                </div>
+                            </li>
+                            <li id="gift"><a  class="ft-23p">伴手禮特選</a>
+                                <div class="cartule_inner">
+                                    <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Shunkogashi.html">旬香菓</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Old mirror.html">古鏡</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Cherry.html">櫻桃通心粉</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Waeabi.html">蕨餅</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="Cold tree.html">樹冰羅曼</a></div>
+                                      <div class="cartule_inner_gift"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                                      </svg><a href="golden cake.html">金鍔糕</a></div>
+                                </div>
+                                <li id="gift"><a href="./sing_in.html" class="ft-23p">用戶登入</a></li>
+                                <li id="gift"><a href="./5 3A917110/index.html" class="ft-23p">行程安排</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="login-container">
+    <h2>登入</h2>
+    <form class="login-form">
+        <div class="form-group">
+            <label for="username" style="text-align: left;">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password"  style="text-align: left;">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group" id="sing_up" >
+            <button type="button" id="login">登入</button>
+            <button type="button">註冊</button>
+        </div>
+    </form>
+</div>
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+var loginButton = document.getElementById("login");
+// 添加點擊事件
+loginButton.addEventListener("click", function() {
+  // swal({
+  //     title: "登入錯誤!",
+  //     text:  "請檢察帳號密碼是否正確!",
+  //     icon: "error",
+  //     buttons:{
+  //         confirm: {
+  //             text: "好的",
+  //             visible: true,
+  //             className : 'sweet-warning'
+  //         }
+  //     }
+  //     })
+  swal({
+      title: "登入成功!",
+      text:  "登入成功，稍後會自動轉跳!",
+      icon: "success",
+      buttons:{
+          confirm: {
+              text: "好的",
+              visible: true,
+              className : 'sweet-warning'
+          }
+      }
+      })
+});
+	window.onload = function(){
+		$('.cartule_inner_div').hide();
+		$('.cartule_inner_view').hide();
+		$('.cartule_inner_food').hide();
+		$('.cartule_inner_gift').hide();
+	}
+	document.getElementById('cartule').addEventListener('mouseup',function(){
+		$('.cartule_inner_div').slideToggle("slow");
+		$('.cartule_inner_view').hide('slow');
+		$('.cartule_inner_food').hide('slow');
+		$('.cartule_inner_gift').hide('slow');
+	})
+	document.getElementById('views').addEventListener('mouseup',function(){
+		$('.cartule_inner_view').slideToggle("slow");
+		$('.cartule_inner_div').hide('slow');
+		$('.cartule_inner_food').hide('slow');
+		$('.cartule_inner_gift').hide('slow');
+	})
+	document.getElementById('food').addEventListener('mouseup',function(){
+		$('.cartule_inner_food').slideToggle("slow");
+		$('.cartule_inner_div').hide('slow');
+		$('.cartule_inner_view').hide('slow');
+		$('.cartule_inner_gift').hide('slow');
+	})
+	document.getElementById('gift').addEventListener('mouseup',function(){
+		$('.cartule_inner_gift').slideToggle("slow");
+		$('.cartule_inner_div').hide('slow');
+		$('.cartule_inner_view').hide('slow');
+		$('.cartule_inner_food').hide('slow');
+	})
+</script>
+</html>
